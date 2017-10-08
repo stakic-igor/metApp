@@ -1,0 +1,37 @@
+//Form, form groups and elements
+::-moz-placeholder {
+  color: lighten($f-black, 50%);
+  font-weight: 300;
+}
+.form {
+//Elm
+&__group {
+  margin: 1.3em 0;
+  }
+
+}
+//labels
+.label {
+  font-size: 1em;
+  //Mod
+  &--block {
+    display: block;
+  }
+}
+//inputs 
+.input {
+  border: 1px solid $black;
+  box-sizing: border-box;
+  color: $f-black;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  &__text {
+    height: 2rem;
+    padding-left: .5rem;
+  }
+  //pseudo classes
+  &:focus {
+    outline: 0;
+  }
+}

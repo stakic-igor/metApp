@@ -1,0 +1,40 @@
+//basic grid system
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  &--fluid {
+      width: 100%;
+  }
+}
+
+.row {
+  font-size: 0;
+}
+
+//col names
+
+$colName: 'col'!default;
+$colNo: 12;
+$gutter: 1rem;
+@for $i from 1 through $colNo {
+  .#{$colName}-#{$i} {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    width: percentage($i / $colNo);
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+//Responsive grid

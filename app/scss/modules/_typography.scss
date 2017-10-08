@@ -1,0 +1,20 @@
+//headings
+.heading {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  //mods
+  &--h1 {
+    margin-top: 0;
+    font-size: 6.854em;
+  }
+  &--h2 {
+    font-size: 4.236em;
+  } 
+  &--h3 {
+    font-size: 2.618em;
+  }
+  &--h4 {
+    font-size: 1.618em;
+  }
+}
