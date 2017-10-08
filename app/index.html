@@ -39,14 +39,45 @@
       <div class="row">
         <!-- SPLIT INTO TWO COLUMS -->
         <div class="col-6">
-a
-        </div><!-- end data -->
+          <div class="data">
+            <h3 class="data__title">Departure Weather</h3>
+            <p class="data__entry">Dew Point: <span id="dewPoint">7<sup class="sup">o</sup></span></p>
+            <p class="data__entry">Humidity: <span id="humidity">64%</span></p>
+            <p class="data__entry">Temperature: <span id="temperature">13.5</span></p>
+          </div><!-- end data -->
+          <div class="row">
+            <div class="col-3 detail">1</div><!-- end col -->
+            <div class="col-3 detail">2</div><!-- end col -->
+            <div class="col-3 detail">3</div><!-- end col -->
+            <div class="col-3 detail">4</div><!-- end col -->
+          </div><!-- end row -->
+        </div><!-- end col -->
         <div class="col-6">
-          b
-        </div><!-- end col-6 -->
+          <div class="data">
+            <h3 class="data__title">Destination Weather</h3>
+            <p class="data__entry">Dew Point: <span id="dewPoint">7<sup class="sup">o</sup></span></p>
+            <p class="data__entry">Humidity: <span id="humidity">64%</span></p>
+            <p class="data__entry">Temperature: <span id="temperature">13.5</span></p>
+          </div><!-- end data -->
+          <div class="row">
+              <div class="col-3">1</div>
+              <div class="col-3">2</div>
+              <div class="col-3">3</div>
+              <div class="col-3">4</div>
+            </div><!-- end row -->
+        </div><!-- end col -->
       </div><!-- end row -->
 
     </section><!-- end result -->  
   </div><!-- end container -->
+
+  <script>
+      function initMap() {
+          console.log('Map Loaded');
+      }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASEIaElDzRL7_yrB1zWdGVjVytzwFNSlw&callback=initMap">
+  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>

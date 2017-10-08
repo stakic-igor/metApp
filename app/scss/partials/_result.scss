@@ -1,0 +1,33 @@
+//Result, data, detail css
+.result {
+
+}
+
+.data {
+  background-color: $white;
+  border: 1px solid darken($white, 10%);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: .75rem;
+  //Elm
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &__entry {
+    font-size: .800rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+    & > span {
+      font-weight: 400;
+    }
+  }
+}
+
+.detail {
+  //fallback if gradient not supported
+  background-color: $light-blue;
+  margin-top: 2rem;
+  @include linearGradient($dark-blue, $light-blue);
+}
