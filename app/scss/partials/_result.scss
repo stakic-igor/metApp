@@ -30,4 +30,5 @@
   background-color: $light-blue;
   margin-top: 2rem;
   @include linearGradient($dark-blue, $light-blue);
+  @include position(relative);
 }

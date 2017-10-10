@@ -341,6 +341,7 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
+  position: relative;
 }
 
 /*# sourceMappingURL=map/base.css.map */

@@ -22,16 +22,17 @@
     </div><!-- end row -->
     <div class="row">
       <section class="get-inputs">
-        <form action="" class="form">
+       
           <div class="col-6 form__group">
             <label for="departure" class="label label--block">Departure</label>
-            <input type="text" id="departure" class="input input__text" placeholder="Ex: London">  
+            <input id="location" type="text" placeholder="latitude"><br>
           </div><!-- end col -->
           <div class="col-6 form__group">
             <label for="destination" class="label label--block">Destination</label>
-            <input type="text" id="destination" class="input input__text" placeholder="Ex: New York">  
+            <input id="destination" type="text" placeholder="longitude">
           </div><!-- end col -->
-        </form><!-- end form -->
+          <input type="submit" id="submit" value="submit">
+        
       </section><!-- end get-inputs -->
     </div><!-- end row -->
     
@@ -79,5 +80,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASEIaElDzRL7_yrB1zWdGVjVytzwFNSlw&callback=initMap">
   </script>
   <script src="js/app.js"></script>
+  <script src="js/cordinates.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
